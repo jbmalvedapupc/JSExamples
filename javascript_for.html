@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <label for="">Enter Number of Loops: </label>
+    <input type="text" id="input_number">
+    <button onclick="loop()">Check Day of Week</button>
+</body>
+<script>
+    function loop(){
+        // Input
+        let input = document.getElementById('input_number').value;
+        alert(input);
+        for (let i = 0; i != input; i++) {
+            // Paragraph element
+            let para = document.createElement("p");
+            // Change paragraph text.
+            para.innerHTML = 'Iteration: ' + i;
+            // Append the element.
+            document.body.appendChild(para);
+        }
+    }
+</script>
+</html>
+

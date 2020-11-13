@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <label for="">Enter day number (1 - 7): </label>
+    <input type="text" id="input_number">
+    <button onclick="checkDay()">Check Day of Week</button>
+</body>
+<script>
+    function checkDay(){
+        let input = document.getElementById('input_number').value;
+        switch(parseInt(input)){
+            case 6:
+                alert('Weekends');
+                break;
+            case 7:
+                alert('Weekends');
+                break;
+            default:
+                alert('Weekdays');
+        }
+    }
+</script>
+
+
+</html>
+

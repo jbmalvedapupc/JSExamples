@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <button onclick="addParagraph()">Press Me!</button>
+</body>
+<script>
+    function addParagraph(){
+        //Create paragraph element
+        var para = document.createElement("p");
+        // Change paragraph text.
+        para.innerHTML = 'YOU CLICKED THE BUTTON!';
+        // Append the element.
+        document.body.appendChild(para);
+    }
+</script>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <input type="text" id="item">
+    <button onclick="addItemToArray()">Add Item</button>
+    <button onclick="displayArrayContents()">Display Contents</button>
+    <div id="result"></div>
+</body>
+<script>
+    // Globals
+    var x = 0;
+    var arr_student_list = Array();
+    // Adds item to array.
+    function addItemToArray(){
+        arr_student_list[x] = document.getElementById('item').value;
+        alert('Item added to array.');
+        x++;
+        document.getElementById('item').value = '';
+    }
+    // Display the contents
+    function displayArrayContents(){
+        let e = "<hr/>";
+        for (let i = 0; i < arr_student_list.length; i++) {
+            e += `Element ${i} contains ${arr_student_list[i]} <br/>`;
+            document.getElementById('result').innerHTML = e;       
+        }
+    }
+</script>
+</html>
+

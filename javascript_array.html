@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+
+    <button onclick="iterateArray()">Iterate Array</button>
+</body>
+<script>
+    function iterateArray(){
+        // Input Array
+        let student_list = ['Joe Bruce', 'Hillary Klint', 'Jonas Jose'];
+        for (let i = 0; i != student_list.length; i++) {
+            // Paragraph element
+            let para = document.createElement("p");
+            // Change paragraph text.
+            para.innerHTML = student_list[i];
+            // Append the element.
+            document.body.appendChild(para);
+        }
+    }
+</script>
+</html>
+

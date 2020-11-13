@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    <label for="">Given number is: 10</label>
+    <input type="text" id="input_number">
+    <button onclick="checkEquality()">High or Low</button>
+</body>
+<script>
+    function checkEquality(){
+        let number = 10;
+        let input = document.getElementById('input_number').value;
+        if (input == number) {
+            alert('Equal');
+        } else if(input >= number) {
+            alert('Greate Than');
+        } else if(input <= number) {
+            alert('Less Than');
+        } else {
+            alert('Greater Than');
+        }
+    } 
+</script>
+</html>
+
